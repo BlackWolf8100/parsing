@@ -16,16 +16,15 @@ driver.close()
 # url = 'https://ikscs.in.ua/'
 url = 'https://4.ident.me/'
 headers = {
-    'User-Agent' : 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
+    'User-Agent' : 'Вписуємо свій User-Agent'
 }
-# https_proxy = 'https://138.199.48.1:8443'
-socks_proxy = 'socks5://127.0.0.1:9150'
+socks_proxy = 'socks5://вписуємо свій proxy'
 
 proxies = { 
             "https" : socks_proxy
             }
 chrome_options = Options()
-chrome_options.add_argument('--proxy-server=127.0.0.1:9150')
+chrome_options.add_argument('--proxy-server=вписуємо свій proxy')
 driver = webdriver.Chrome(service=ChromeService(), options=chrome_options)
 # driver = webdriver.Chrome()
 driver.get("https://www.example.com")

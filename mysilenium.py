@@ -6,14 +6,13 @@ from selenium.webdriver.common.proxy import Proxy, ProxyType
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 
-
 driver = webdriver.Firefox()
-# url = 'https://ikscs.in.ua/'
+
 url = 'https://4.ident.me/'
 driver.get(url)
 time.sleep(5)
 driver.close()
-# url = 'https://ikscs.in.ua/'
+
 url = 'https://4.ident.me/'
 headers = {
     'User-Agent' : 'Вписуємо свій User-Agent'
